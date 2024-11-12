@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarConnex - Your Trusted Partner</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="page active">
+        <h1>Welcome to CarConnex</h1>
+        <p>Your trusted partner for professional auto repair and maintenance services.</p>
+        
+        <div class="shop-images">
+            <div class="shop-image">
+                <img src="./Assets/1.jpg" alt="Shop front">
+            </div>
+            <div class="shop-image">
+                <img src="./Assets/2.jpg" alt="Mechanic working">
+            </div>
+            <div class="shop-image">
+                <img src="./Assets/3.jpg" alt="Service bay">
+            </div>
+        </div>
+
+        <h2>What Our Customers Say</h2>
+        <h4>Google Reviews:</h4>
+        <div class="testimonials">
+            <!-- Testimonials from JavaScript -->
+        </div>
+    </section>
+
+    <section id="about" class="page">
+        <div class="about-section">
+            <h1>About CarConnex</h1>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At CarConnex, we are a locally owned and operated mechanic shop dedicated to providing reliable and affordable auto repair services to the community. With years of experience under our belts, our skilled technicians are here to ensure your vehicle is running smoothly and safely. From routine maintenance like oil changes and tire rotations to more complex repairs, we take pride in delivering high-quality service with a personal touch.
+
+                        At CarConnex, we believe in building lasting relationships with our customers, which is why we offer honest, transparent service that you can trust. Whether you're in need of emergency repairs or simply want to keep your car in top condition, we're here to help. Stop by or give us a call today—your car's next connection to quality service is just around the corner!</p>
+                    <br>
+                    <p>Our team of certified mechanics brings together over 50 years of combined experience, ensuring your vehicle receives the highest quality care. We utilize state-of-the-art diagnostic equipment and maintain up-to-date knowledge of the latest automotive technologies to provide comprehensive service for all makes and models.</p>
+                </div>
+            </div>
+
+            <div class="about-images">
+                <div class="about-image-card">
+                    <img src="./Assets/tools.jpg" alt="Modern Equipment">
+                    <div class="image-caption">
+                        <h3>Modern Equipment</h3>
+                        <p>State-of-the-art diagnostic and repair tools</p>
+                    </div>
+                </div>
+                <div class="about-image-card">
+                    <img src="./Assets/mechanic1.jpg" alt="Expert Team">
+                    <div class="image-caption">
+                        <h3>Expert Team</h3>
+                        <p>Certified mechanics with extensive experience</p>
+                    </div>
+                </div>
+                <div class="about-image-card">
+                    <img src="./Assets/cars.jpg" alt="Customer Service">
+                    <div class="image-caption">
+                        <h3>Customer Service</h3>
+                        <p>Dedicated to exceptional customer experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10k+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Weekday</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="page">
+        <h1>Contact Us to schedule an appointment</h1>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="responseMessage"></p>
+        </form>
+        <div class="contact-section">
+            
+            <div class="contact-details">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Contact Info</h3>
+                    <p>1680 Spring Rd SE</p>
+                    <p>Smyrna, GA 30080</p>
+                    <p><i class="fas fa-phone" style="font-size: 1rem; margin: 0 5px 0 0;"></i>(770) 333-0408</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Business Hours</h3>
+                    <div class="hours-list">
+                        <p>Monday - Friday <span>8am - 6pm</span></p>
+                        <p>Saturday <span>Closed</span></p>
+                        <p>Sunday <span>Closed</span></p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section" href="https://www.google.com/maps/dir//1680+Spring+Rd+SE,+Smyrna,+GA+30080/@33.8815654,-84.5866603,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x88f510c3b649166d:0x8f9c30391a5cdf07!2m2!1d-84.5042591!2d33.8815928?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">
+                <h3>Contact Info</h3>
+                <p>1680 Spring Rd SE</p>
+                <p>Smyrna, GA 30080</p>
+                <p>Phone: (770) 333-0408</p>
+            </div>
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 8am - 6pm</p>
+                <p>Saturday: Closed</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=136426533072941&_rdr"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
